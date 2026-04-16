@@ -1,0 +1,36 @@
+.headercontainer {
+
+    display: grid;
+
+    grid-template-columns: 200px 1fr;
+    width: 80%;
+    height: 70px;
+    padding-top: 10px;
+
+}
+
+
+.imageheader {
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.imageheader:hover {
+
+    border-radius: 30px;
+    border-bottom: solid rgba(248, 189, 28, 0.966) 1px;
+
+}
+
+
+
+.imageheader img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+
+}
+

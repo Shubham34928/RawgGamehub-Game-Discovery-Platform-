@@ -1,0 +1,28 @@
+.screenshots {
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+gap: 10px;
+overflow: hidden;
+padding: 10px;
+
+}
+
+
+.image{
+
+width:100%;
+height: 200px;
+object-fit: cover;
+cursor: pointer;
+
+}
+
+.image:hover{
+
+border: 1px solid rgba(255, 255, 255, 0.37);
+
+
+
+}

@@ -1,0 +1,60 @@
+body{
+
+margin: 0;
+background-color: rgb(27, 27, 27);
+
+}
+.gamegrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 40px;
+
+  padding: 15px;
+}
+
+
+.gridheadline{
+
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(226, 223, 223);
+
+ font-weight: bold;
+ font-size: 40px;
+}
+
+.skleton_gamecard{
+
+border-radius: 12px;
+
+overflow: hidden;
+}
+
+
+
+
+.skleton_image{
+ height: 180px;
+ animation: imageload 1s ease-in-out infinite;
+
+}
+
+@keyframes imageload {
+
+0% {background-color: rgb(34, 34, 34);}
+100% {background-color: rgb(66, 66, 66);}
+
+}
+.skleton_content{
+
+ height: 80px;
+ animation: contentload 1s ease-in-out infinite;
+
+}
+
+@keyframes contentload {
+
+0% {background-color: rgb(66, 66, 66);}
+100% {background-color: rgb(34, 34, 34);}
+
+
+}

@@ -1,0 +1,23 @@
+.trailer video {
+
+    width: 100%;
+
+}
+
+
+.trailer {
+
+
+    padding: 10px;
+
+}
+
+.trailername {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(226, 223, 223);
+    font-weight: bold;
+    font-size: 20px;
+
+
+}
