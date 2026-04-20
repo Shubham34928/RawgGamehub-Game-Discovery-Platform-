@@ -8,7 +8,7 @@ function GameGrid({ games, loading, page }) {
     <>
     
      
-      <div>
+      <div className ="maingrid">
         {loading && page == 1 ? (
           <div className="gamegrid">
             {Array.from({ length: 20 }).map((ele, index) => {

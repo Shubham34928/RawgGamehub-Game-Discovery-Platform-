@@ -12,19 +12,28 @@ function App(){
 
 
   return(<>
-  
-  <GameData> 
-        <BrowserRouter>
-        <Header/>
+
+   <GameData> 
+     <BrowserRouter>
+      <Header/>
+    
+    
         <Routes>
           
           <Route path="/" element={<Home/>}/>
           <Route path="/games/:id" element={ <GameDetailsPage/>}/>
 
         </Routes>
+    </BrowserRouter>
+      
+ 
+  
 
-        </BrowserRouter>
   </GameData>
+
+
+ 
+ 
 
   </>)
 

@@ -16,6 +16,7 @@ function Header() {
       >
         <img src="/rawg.png" className="image" />
       </div>
+      
 
       <SearchBar />
 

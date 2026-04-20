@@ -26,3 +26,16 @@ border: 1px solid rgba(255, 255, 255, 0.37);
 
 
 }
+@media screen and (max-width: 600px) {
+
+
+
+.screenshots {
+
+grid-template-columns: 1fr;
+
+
+}
+
+
+}

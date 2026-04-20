@@ -38,3 +38,27 @@ transform: scale(1.1);
 
 }
 
+
+
+@media screen and (max-width: 600px) 
+{ 
+
+.platformselect ,.orderselect{
+
+width: 150px;
+
+
+}
+
+.filters{
+
+
+display: flex;
+flex-wrap: wrap;
+gap:10px;
+margin: 10px;
+
+}
+
+ 
+}

@@ -46,3 +46,17 @@ padding: 5px;
 
 
 
+
+
+@media screen and (max-width: 600px) 
+{ 
+
+
+.maincontainer{
+
+justify-content: center;
+width:calc(100vw - 40px);
+
+}
+ 
+}

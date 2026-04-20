@@ -6,7 +6,8 @@ background-color: rgb(27, 27, 27);
 }
 .gamegrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  
   gap: 40px;
 
   padding: 15px;
@@ -57,4 +58,29 @@ overflow: hidden;
 100% {background-color: rgb(34, 34, 34);}
 
 
+}
+
+
+@media screen and (max-width: 600px) 
+{ 
+
+
+
+
+.gamegrid {
+  display: grid;
+  grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.gridheadline{
+
+
+  padding: 10px;
+}
+
+
+ 
 }

@@ -97,3 +97,26 @@ color: rgb(255, 255, 255);
 transform: scale(1.1);
 
 }
+
+
+@media screen and (max-width: 600px) {
+
+
+.detailsContainer {
+
+  grid-template-columns: 1fr;
+}
+
+
+.preview {
+  width: 90%;
+
+}
+
+
+.preview svg{
+  width: 30px;
+
+}
+  
+}

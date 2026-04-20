@@ -49,7 +49,7 @@ function Home() {
           setloading={setloading}
           genreslist={genreslist}
         />
-        <div>
+        <div className="maincontainer">
           <h2 className="gridheadline">
             {platform.name} {genres.name} Games
           </h2>
