@@ -1,6 +1,4 @@
 .filters{
-
-
 display: flex;
 gap:10px
 
@@ -43,22 +41,37 @@ transform: scale(1.1);
 @media screen and (max-width: 600px) 
 { 
 
+
 .platformselect ,.orderselect{
+  width: 200px;
+  appearance: none;
+}
 
-width: 150px;
-
-
+html {
+  scrollbar-gutter: stable;
 }
 
 .filters{
 
 
-display: flex;
-flex-wrap: wrap;
-gap:10px;
-margin: 10px;
+ display: grid;
+ justify-items: center;
+
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap:10px;
+ width: calc(100vw);
+
 
 }
 
- 
+
+
+
+.gridheadline{
+
+font-size: 30px;
+text-align: center;
+
+}
+
 }

@@ -2,7 +2,6 @@ import GameCard from "./GameCard";
 import "../styles/GameGrid.css";
 
 function GameGrid({ games, loading, page }) {
-  console.log("games", games);
 
   return (
     <>

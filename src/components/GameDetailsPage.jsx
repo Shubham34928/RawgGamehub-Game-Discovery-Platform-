@@ -35,7 +35,7 @@ function GameDetailsPage() {
   return (
    
    
-    <div>
+    <div className="detailspage">
     
       <div className="backbutton">
         <button
@@ -80,6 +80,7 @@ function GameDetailsPage() {
           )}
         </div>
       </div>
+
 
       {previewtoggle && (
         <div className="preview">

@@ -53,7 +53,7 @@ function GameData({ children }) {
   }
 
   useEffect(() => {
-    console.log("useeffect getgamesdata");
+  
     let id = setTimeout(() => {
       getGames();
     }, 500);
@@ -64,7 +64,7 @@ function GameData({ children }) {
   }, [search, genres, platform, order, page]);
 
   useEffect(() => {
-    console.log("useeffect set games and page to start empty and 1");
+
     setGames([]);
     setPage(1);
   }, [search, genres, platform, order]);

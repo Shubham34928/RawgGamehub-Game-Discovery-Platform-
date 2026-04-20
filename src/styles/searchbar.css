@@ -33,3 +33,20 @@
 }
 
 
+@media screen and (max-width: 600px) 
+{ 
+
+
+.searchbox{
+display: flex;
+justify-content: center;
+
+}
+
+.textbox::placeholder{
+
+font-size: small;
+
+}
+
+}

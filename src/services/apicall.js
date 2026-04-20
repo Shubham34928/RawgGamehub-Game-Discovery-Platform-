@@ -19,7 +19,7 @@ const API_KEY = import.meta.env.VITE_RAWG_API_KEY;
    fetchgames
      .get(`/games/${id}`)
      .then((res) => {
-       console.log("gamedetails", res);
+  
        setGame(res.data);
      })
      .catch((err) => {
@@ -36,7 +36,7 @@ const API_KEY = import.meta.env.VITE_RAWG_API_KEY;
      fetchgames
        .get(`/games/${id}/screenshots`)
        .then((res) => {
-         console.log("screenshots", res);
+  
          setScreenshot(res.data.results);
        })
        .catch((err) => {
@@ -62,7 +62,7 @@ const API_KEY = import.meta.env.VITE_RAWG_API_KEY;
    fetchgames
      .get(`/games/${id}/movies`)
      .then((res) => {
-       console.log("Tailer", res);
+
        setTrailer(res.data.results);
      })
      .catch((err) => {

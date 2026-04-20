@@ -42,11 +42,29 @@
 
 @media screen and (max-width: 600px) {
 
-
 .imageheader {
-   display: none;
+   max-width: 300px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+.headercontainer {
+
+    display: flex;
+    flex-wrap: wrap;
+
+justify-content: center;
+ width: calc(100vw);
+
 
 }
 
 
+
+
 }
+

@@ -99,6 +99,8 @@ transform: scale(1.1);
 }
 
 
+
+
 @media screen and (max-width: 600px) {
 
 
@@ -110,13 +112,29 @@ transform: scale(1.1);
 
 .preview {
   width: 90%;
-
+  padding: 5px;
 }
 
 
 .preview svg{
   width: 30px;
+ 
+}
+
+.preview img{
+
+border: rgba(255, 255, 255, 0.712) 2px solid;
 
 }
+
+
+.detailspage{
+
+
+  margin-top: 100px;
+
+}
+
+
   
 }

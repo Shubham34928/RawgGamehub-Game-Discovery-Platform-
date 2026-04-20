@@ -10,7 +10,8 @@ function SearchBar() {
 
 
   function handlekeydown(event) {
-    if ((event.target.value.trim() || games.length==0 ) && event.code == "Enter" ) {
+
+    if ((event.target.value.trim() || games.length==0 ) && event.key == "Enter" ) {
       setloading(true);
       setSearch(event.target.value);
       navigate("/");

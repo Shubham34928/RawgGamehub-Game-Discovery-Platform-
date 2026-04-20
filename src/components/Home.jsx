@@ -25,7 +25,7 @@ function Home() {
   } = useContext(GameContext);
 
   useEffect(() => {
-    console.log("useeffect intersection observer");
+
     let watch = new IntersectionObserver(
       (ele) => {
         if (ele[0].isIntersecting && !loading) {

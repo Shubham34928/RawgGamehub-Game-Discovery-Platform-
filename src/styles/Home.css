@@ -52,10 +52,14 @@ padding: 5px;
 { 
 
 
+html {
+  scrollbar-gutter: stable;
+}
 .maincontainer{
 
 justify-content: center;
-width:calc(100vw - 40px);
+ width: calc(100vw);
+ margin-top: 100px;
 
 }
  
