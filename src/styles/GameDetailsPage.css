@@ -131,10 +131,15 @@ border: rgba(255, 255, 255, 0.712) 2px solid;
 .detailspage{
 
 
-  margin-top: 100px;
+  margin-top: 120px;
 
 }
 
+.backbutton{
+  display: flex;
+justify-content: center;
+
+}
 
   
 }

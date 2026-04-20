@@ -1,34 +1,50 @@
 import "../styles/searchbar.css";
 import { useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { GameContext } from "./GameData";
 
 
 function SearchBar() {
   let navigate = useNavigate();
   let { setSearch, setloading,games} = useContext(GameContext);
+   
+  let[input,setInput]=useState("");
 
-
-  function handlekeydown(event) {
-
-    if ((event.target.value.trim() || games.length==0 ) && event.key == "Enter" ) {
+  function handlesubmit(event) {
+    event.preventDefault();
+    if ((input.trim() || games.length==0 )) {
       setloading(true);
-      setSearch(event.target.value);
+      setSearch(input);
       navigate("/");
     
     }
 
   }
 
+
+  function handlechange(event){
+
+  setInput(event.target.value)
+
+
+  }
+
+
   return (
     <>
-      <div className="searchbox">
-        <input
-          placeholder="Search Games..."
-          onKeyDown={handlekeydown}
-          className="textbox"
+   
+
+      <form onSubmit={handlesubmit} className="searchbox">
+          <input
+           placeholder="Search Games..."
+           className="textbox"
+           value={input}
+           onChange={handlechange}
         />
-      </div>
+  
+      </form>
+      
+   
     </>
   );
 }
